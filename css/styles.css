@@ -193,8 +193,10 @@ button {
 
 .contact .mail,
 .contact .phone {
+    display: flex;
     padding-top: 32px;
     padding-bottom: 28px;
+    align-items: center;
 }
 
 .site-nav .item:not(:last-child) {
