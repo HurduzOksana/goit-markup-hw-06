@@ -830,7 +830,7 @@ margin-left: auto;
 
     display: flex;
     align-items: baseline;
-
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -885,9 +885,8 @@ margin-left: auto;
 
     margin-right: 12px;
     outline: none;
-
-    width: 358px;
-    height: 50px;
+    min-width: 358px;
+    padding: 15px 15px 16px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1145,7 +1144,7 @@ margin-right: 8px;
     transform: translate(-50%, -50%);
 
     height: 581px;
-    width: 528px;
+    max-width: 528px;
     background-color: var(--background-header);
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1221,7 +1220,7 @@ margin-right: 8px;
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-form:focus {
@@ -1236,7 +1235,7 @@ margin-right: 8px;
     position: absolute;
     left: 12px;
     top: 50%;
-    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-comment {
